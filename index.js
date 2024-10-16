@@ -27,7 +27,6 @@ const db = new Low(adapter, defaultData);
 //Serve a public folder
 app.use(express.static('public'));
 app.use(express.json()); //11. parse the message data
-
 //Listen
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
